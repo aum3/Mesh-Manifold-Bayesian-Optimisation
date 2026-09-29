@@ -1,6 +1,9 @@
+![Header](header.png)
+
 <div align="center">
 
-![Header](header.png)
+
+
     
 ### Mesh Bayesian Optimisation for manifold-constrained black-box optimisation
 
@@ -49,7 +52,6 @@ Use a **mesh** as the approximation. Mesh Laplacians are well studied (spectral 
 
 
 
-
 ---
 ## 3. Mesh and Kernel
 
@@ -78,9 +80,6 @@ Matérn kernels are built from the eigenfunctions of this operator, so they inhe
 
 That control over roughness is why Matérn kernels suit real-world data, where functions can be continuous but not differentiable.
 
-
-
-
 ---
 ## 4. Objective Function
 
@@ -89,10 +88,8 @@ That control over roughness is why Matérn kernels suit real-world data, where f
 For demonstration I use $f(x, y, z) = x$. The method works for any continuous function, provided the kernel suits it.
 
 
-
-
     
-![png](saladin_files/saladin_7_0.png)
+![png](saladin_files/saladin_8_0.png)
     
 
 
@@ -140,9 +137,6 @@ $$
 
 $\xi$ trades off exploration against exploitation (larger $\xi$ favours exploring). I use $\xi = 0.9$ here.
 
-
-
-
 ---
 ## 6. Mesh BO in action: Posterior Evolution
 
@@ -161,6 +155,16 @@ $\xi$ trades off exploration against exploitation (larger $\xi$ favours explorin
 > **Each observation is spread across the surface by the kernel, so the optimiser needs far fewer evaluations.**
 
 
+    
+![png](saladin_files/saladin_13_0.png)
+    
+
+
+    initial vertex value: 0.5475596189498901
+    sampled values (sorted, incl. initial): [-0.97176754 -0.91938204 -0.91281438 -0.47099268 -0.26728225  0.00433171
+      0.54755962]
+    true minimum: -1.0502488613128662 at vertex 1976
+
 
 ---
 ## 7. Sample Path
@@ -171,11 +175,8 @@ $\xi$ trades off exploration against exploitation (larger $\xi$ favours explorin
 Numbers show the order in which vertices were sampled, joined by curves that follow the surface. Left: ground-truth objective. Right: the GP posterior mean after 3 sample points.
 
 
-
-
-
     
-![png](saladin_files/saladin_14_0.png)
+![png](saladin_files/saladin_15_0.png)
     
 
 
@@ -191,12 +192,18 @@ Heat map of $k(x_0, \cdot)$ for a single source vertex $x_0$ (red diamond). Brig
 Correlation fades with distance *along the surface*, as if $x_0$ were a heat source. That is the geometry we wanted the kernel to capture.
 
 
-
-
-
     
-![png](saladin_files/saladin_16_0.png)
+![png](saladin_files/saladin_17_0.png)
     
+
+
+
+
+
+
+
+
+
 
 
 ---
@@ -211,10 +218,8 @@ The 100 points were sampled from a sphere, so a "true" kernel exists. I take the
 Red: mesh kernel. Blue: continuous sphere kernel. Each dot is a pair of points (a random subset, to keep the plot readable).
 
 
-
-
     
-![png](saladin_files/saladin_19_0.png)
+![png](saladin_files/saladin_20_0.png)
     
 
 
