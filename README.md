@@ -89,7 +89,7 @@ For demonstration I use $f(x, y, z) = x$. The method works for any continuous fu
 
 
     
-![png](saladin_files/saladin_8_0.png)
+![png](README_files/README_8_0.png)
     
 
 
@@ -156,7 +156,7 @@ $\xi$ trades off exploration against exploitation (larger $\xi$ favours explorin
 
 
     
-![png](saladin_files/saladin_13_0.png)
+![png](README_files/README_13_0.png)
     
 
 
@@ -176,7 +176,7 @@ Numbers show the order in which vertices were sampled, joined by curves that fol
 
 
     
-![png](saladin_files/saladin_15_0.png)
+![png](README_files/README_15_0.png)
     
 
 
@@ -193,17 +193,21 @@ Correlation fades with distance *along the surface*, as if $x_0$ were a heat sou
 
 
     
-![png](saladin_files/saladin_17_0.png)
+![png](README_files/README_17_0.png)
     
 
 
 
+    The Kernel crashed while executing code in the current cell or a previous cell. 
 
 
+    Please review the code in the cell(s) to identify a possible cause of the failure. 
 
 
+    Click <a href='https://aka.ms/vscodeJupyterKernelCrash'>here</a> for more info. 
 
 
+    View Jupyter <a href='command:jupyter.viewOutput'>log</a> for further details.
 
 
 ---
@@ -219,7 +223,7 @@ Red: mesh kernel. Blue: continuous sphere kernel. Each dot is a pair of points (
 
 
     
-![png](saladin_files/saladin_20_0.png)
+![png](README_files/README_20_0.png)
     
 
 
